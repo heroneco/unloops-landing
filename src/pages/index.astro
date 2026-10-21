@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const appUrl = 'https://app.unloops.org/'
+---
+
+<Layout
+  title="Unloops | Make room for better habits"
+  description="Build the habits you want, loosen the ones you don't, and keep moving at your own pace with Unloops."
+>
+  <div class="relative isolate overflow-hidden">
+    <div aria-hidden="true" class="pointer-events-none absolute -top-72 left-1/2 -z-10 h-[44rem] w-[44rem] -translate-x-1/2 rounded-full bg-[#dc9355]/10 blur-[110px]"></div>
+
+    <header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 sm:px-10 lg:px-12">
+      <a href="#top" class="flex items-center gap-3 text-xl font-semibold tracking-tight" aria-label="Unloops home">
+        <span class="grid size-9 place-items-center rounded-xl bg-[#f4b56a] text-[#15232a]">
+          <svg aria-hidden="true" viewBox="0 0 32 32" fill="none" class="size-6">
+            <path d="M16 7.5c-4.6-4.3-11.5-.7-11.5 5.4 0 7.2 8.7 11.6 11.5 13.1 2.8-1.5 11.5-5.9 11.5-13.1 0-6.1-6.9-9.7-11.5-5.4Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+            <path d="M11 15.5c1.9 1.8 3.5 2.8 5 3.5 1.5-.7 3.1-1.7 5-3.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+        </span>
+        unloops
+      </a>
+      <nav aria-label="Main navigation" class="hidden items-center gap-8 text-sm font-medium text-[#aebdc1] md:flex">
+        <a href="#why-unloops" class="transition-colors hover:text-[#f4b56a]">Why Unloops</a>
+        <a href="#how-it-works" class="transition-colors hover:text-[#f4b56a]">How it works</a>
+      </nav>
+      <a href={appUrl} class="rounded-full border border-[#f4b56a]/50 px-5 py-2.5 text-sm font-semibold text-[#f4b56a] transition-colors hover:bg-[#f4b56a] hover:text-[#15232a] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f4b56a]">
+        Open the app <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="mx-auto grid max-w-7xl items-center gap-14 px-6 pb-24 pt-20 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:px-12 lg:pb-32 lg:pt-28">
+        <div class="max-w-2xl">
+          <p class="mb-7 inline-flex items-center gap-2 rounded-full border border-[#f4b56a]/20 bg-[#f4b56a]/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#f4b56a]">
+            <span class="size-1.5 rounded-full bg-[#f4b56a]"></span>
+            A calmer way to change
+          </p>
+          <h1 class="text-5xl font-semibold leading-[1.08] tracking-[-0.055em] sm:text-6xl lg:text-[4.8rem]">
+            Make room for <span class="text-[#f4b56a]">better habits.</span>
+          </h1>
+          <p class="mt-7 max-w-xl text-lg leading-relaxed text-[#b7c4c5] sm:text-xl">
+            Build what matters. Loosen what holds you back. Unloops helps you keep moving, one small step at a time.
+          </p>
+          <div class="mt-9 flex flex-wrap items-center gap-5">
+            <a href={appUrl} class="inline-flex items-center justify-center gap-3 rounded-full bg-[#f4b56a] px-7 py-4 font-semibold text-[#17232a] shadow-[0_16px_45px_-18px_rgba(244,181,106,0.7)] transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f4b56a]">
+              Start with Unloops <span aria-hidden="true">↗</span>
+            </a>
+            <a href="#how-it-works" class="text-sm font-medium text-[#d9dfdb] underline decoration-[#f4b56a]/60 underline-offset-8 hover:text-[#f4b56a]">See how it works</a>
+          </div>
+          <p class="mt-8 text-sm text-[#83979a]">Your pace. Your path. A fresh start whenever you need one.</p>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-[34rem] lg:max-w-none" role="img" aria-label="Illustration of a sample day with three habits and a weekly view">
+          <div aria-hidden="true" class="absolute inset-x-5 top-12 bottom-4 rotate-[-6deg] rounded-[2.5rem] border border-[#f4b56a]/20 bg-[#f4b56a]/5"></div>
+          <div aria-hidden="true" class="absolute -right-4 -top-8 size-44 rounded-full border border-[#f4b56a]/20 sm:-right-10"></div>
+          <div class="relative rounded-[2rem] border border-[#42565b] bg-[#1b2b33] p-5 shadow-[0_32px_100px_-24px_rgba(0,0,0,0.55)] sm:p-7">
+            <div class="flex items-center justify-between border-b border-[#34474c] pb-5">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#f4b56a]">Your day</p>
+                <p class="mt-1 text-xl font-semibold">Keep going, gently.</p>
+              </div>
+              <span class="grid size-11 place-items-center rounded-full border border-[#f4b56a]/30 bg-[#f4b56a]/10 text-xl text-[#f4b56a]">✳</span>
+            </div>
+            <div class="space-y-3 pt-6">
+              <div class="flex items-center gap-4 rounded-2xl border border-[#3c5154] bg-[#24383d] p-4">
+                <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#f4b56a]/15 text-[#f4b56a]">✦</span>
+                <div class="min-w-0 flex-1"><p class="font-medium">Read for 10 minutes</p><p class="text-xs text-[#9fb2b3]">A little space to slow down</p></div>
+                <span class="grid size-6 shrink-0 place-items-center rounded-full bg-[#f4b56a] text-sm font-bold text-[#17232a]">✓</span>
+              </div>
+              <div class="flex items-center gap-4 rounded-2xl border border-[#3c5154] bg-[#24383d] p-4">
+                <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#f4b56a]/15 text-[#f4b56a]">⌁</span>
+                <div class="min-w-0 flex-1"><p class="font-medium">Take a short walk</p><p class="text-xs text-[#9fb2b3]">Move in your own way</p></div>
+                <span class="grid size-6 shrink-0 place-items-center rounded-full bg-[#f4b56a] text-sm font-bold text-[#17232a]">✓</span>
+              </div>
+              <div class="flex items-center gap-4 rounded-2xl border border-[#3c5154] bg-[#24383d] p-4">
+                <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#d7e3dc]/10 text-[#d7e3dc]">☾</span>
+                <div class="min-w-0 flex-1"><p class="font-medium">Evening reset</p><p class="text-xs text-[#9fb2b3]">Ready when you are</p></div>
+                <span class="size-6 shrink-0 rounded-full border border-[#71898b]"></span>
+              </div>
+            </div>
+            <div class="mt-6 rounded-2xl border border-[#3c5154] bg-[#17262e] p-5">
+              <div class="mb-5 flex items-center justify-between"><p class="text-sm font-medium">This week</p><p class="text-xs text-[#9fb2b3]">Every step counts</p></div>
+              <div class="grid grid-cols-7 gap-2 text-center text-[11px] text-[#91a4a7]">
+                <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+                <span class="mx-auto size-7 rounded-full bg-[#f4b56a]"></span>
+                <span class="mx-auto size-7 rounded-full bg-[#f4b56a]"></span>
+                <span class="mx-auto size-7 rounded-full bg-[#f4b56a]/65"></span>
+                <span class="mx-auto grid size-7 place-items-center rounded-full border border-[#f4b56a] text-[#f4b56a]">•</span>
+                <span class="mx-auto size-7 rounded-full bg-[#34474c]"></span>
+                <span class="mx-auto size-7 rounded-full bg-[#34474c]"></span>
+                <span class="mx-auto size-7 rounded-full bg-[#34474c]"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-unloops" class="border-y border-[#34474c] bg-[#17252d]/75">
+        <div class="mx-auto grid max-w-7xl gap-6 px-6 py-8 text-center text-sm font-medium text-[#aebdc1] sm:grid-cols-3 sm:px-10 lg:px-12">
+          <p>Build habits that fit your life</p>
+          <p>Find a way through old patterns</p>
+          <p>See progress beyond a streak</p>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="mx-auto max-w-7xl px-6 py-24 sm:px-10 lg:px-12 lg:py-32">
+        <div class="max-w-2xl">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#f4b56a]">A more human approach</p>
+          <h2 class="mt-4 text-4xl font-semibold tracking-[-0.045em] sm:text-5xl">Change is rarely a straight line.</h2>
+          <p class="mt-6 text-lg leading-relaxed text-[#aebdc1]">Unloops gives you space to start small, notice what helps, and return to your path when life gets messy.</p>
+        </div>
+        <div class="mt-14 grid gap-4 md:grid-cols-3">
+          <article class="rounded-[1.75rem] border border-[#354a4e] bg-[#1b2b33] p-7 sm:p-8">
+            <span class="grid size-12 place-items-center rounded-2xl bg-[#f4b56a]/10 text-2xl text-[#f4b56a]">◎</span>
+            <h3 class="mt-8 text-xl font-semibold">Start with intention</h3>
+            <p class="mt-3 leading-relaxed text-[#aebdc1]">Choose a habit to build or a pattern to leave behind. Make the first step feel doable.</p>
+          </article>
+          <article class="rounded-[1.75rem] border border-[#354a4e] bg-[#1b2b33] p-7 sm:p-8">
+            <span class="grid size-12 place-items-center rounded-2xl bg-[#f4b56a]/10 text-2xl text-[#f4b56a]">✳</span>
+            <h3 class="mt-8 text-xl font-semibold">Show up your way</h3>
+            <p class="mt-3 leading-relaxed text-[#aebdc1]">Keep track of the moments that matter, including the small wins that are easy to miss.</p>
+          </article>
+          <article class="rounded-[1.75rem] border border-[#354a4e] bg-[#1b2b33] p-7 sm:p-8">
+            <span class="grid size-12 place-items-center rounded-2xl bg-[#f4b56a]/10 text-2xl text-[#f4b56a]">↝</span>
+            <h3 class="mt-8 text-xl font-semibold">Keep finding your way</h3>
+            <p class="mt-3 leading-relaxed text-[#aebdc1]">Look back, learn what works, and pick up again without letting one day define the next.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-6 mb-10 overflow-hidden rounded-[2rem] border border-[#f4b56a]/20 bg-[#26353a] px-7 py-16 text-center sm:mx-10 sm:px-12 lg:mx-auto lg:max-w-[calc(80rem-6rem)] lg:py-20">
+        <div aria-hidden="true" class="mx-auto mb-6 grid size-14 place-items-center rounded-full border border-[#f4b56a]/40 text-3xl text-[#f4b56a]">↝</div>
+        <h2 class="mx-auto max-w-2xl text-4xl font-semibold tracking-[-0.045em] sm:text-5xl">There is always room to begin again.</h2>
+        <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-[#b7c4c5]">Take the next step toward the life you want to make space for.</p>
+        <a href={appUrl} class="mt-9 inline-flex items-center justify-center gap-3 rounded-full bg-[#f4b56a] px-7 py-4 font-semibold text-[#17232a] transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f4b56a]">Open Unloops <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-[#83979a] sm:flex-row sm:items-center sm:justify-between sm:px-10 lg:px-12">
+      <span class="font-semibold text-[#d9dfdb]">unloops</span>
+      <span>Small steps. More room to grow.</span>
+      <a href={appUrl} class="text-[#d9dfdb] hover:text-[#f4b56a]">Go to the app ↗</a>
+    </footer>
+  </div>
+</Layout>
